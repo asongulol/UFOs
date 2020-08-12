@@ -7,13 +7,15 @@
     <title>UFO Finder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/style.css">
+
+
 </head>
 
 <body class="bg-dark">
     <div class="wrapper">
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <a href="index.html" class="navbar-brand">UFO Sightings</a>
+            <a class="navbar-brand" href="index.html">UFO Sightings</a>
         </nav>
         <div class="jumbotron">
             <h1 class="display-4">The Truth Is Out There</h1>
@@ -21,7 +23,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4">
-                    <h3>UFO Sightings: Fact or Fancy? <br><small>Ufologists Weigh In</small></h3>
+                    <h3>UFO Sightings: Fact of Fancy?<br> <small>Ufologists Weigh In</small></h3>
                 </div>
                 <div class="col-md-8">
                     <p>
@@ -41,6 +43,8 @@
                         engagement initiative she founded and funds.<br><br>So what do YOU think? Are we alone in the
                         universe? Are aliens trying to contact us, or do they want to be left alone? Dig through the
                         data yourself, and let us know what you see.
+
+
                     </p>
                 </div>
             </div>
@@ -50,16 +54,33 @@
                 <div class="col-md-3">
                     <form class="bg-dark">
                         <p>Filter Search</p>
+                        <!-- Date City State Country Shape-->
                         <ul class="list-group bg-dark">
                             <li class="list-group-item bg-dark">
-                                <label for="date">Enter Date</label>
-                                <input type="text" placeholder="1/10/2010" id="datetime" />
+                                <label for="datetime">Enter Date</label>
+                                <input type="text" placeholder="1/10/2010" id="datetime" align="right"/>
                             </li>
                             <li class="list-group-item bg-dark">
+                                <label for="city">Enter City</label>
+                                <input type="text" placeholder="Belfast" id="city"  align="right"/>
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="state">Enter State</label>
+                                <input type="text" placeholder="MA" id="state" />
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="country">Enter Country</label>
+                                <input type="text" placeholder="USA" id="country" />
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="shape">Enter Shape</label>
+                                <input type="text" placeholder="Circle" id="shape" />
+                            </li>
                                 <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
                             </li>
                         </ul>
                     </form>
+
                 </div>
                 <div class="col-md-9">
                     <table class="table table-striped">
@@ -77,12 +98,15 @@
                         <tbody></tbody>
                     </table>
                 </div>
+
             </div>
         </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
     <script src="static/js/data.js"></script>
     <script src="static/js/app.js"></script>
+
 </body>
 
 </html>
