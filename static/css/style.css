@@ -1,12 +1,13 @@
-//specifies the color of the text
-  body {
 
-    color: #f7f7f7;
-  }
-
-//formats jumbotron class
+/*formats jumbotron class*/
 .jumbotron {
     background-image: url("../images/nasa.jpg");
     background-size: 100% 100%;
     text-align: center;
+  }
+  
+  /*specifies the color */
+  body {
+
+    color: #f7f7f7;
   }
